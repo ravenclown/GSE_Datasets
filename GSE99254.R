@@ -29,3 +29,4 @@ rm(tempd)
 #Creating Seurat Object
 gse <- CreateSeuratObject(counts = gse.data,project = "gse99254", min.cells = 3,min.features = 200,meta.data = gse.metadata)
 gse <- AddMetaData(gse,gse.metadata)
+saveRDS(gse,file = "D:/GSE99254.rds")
