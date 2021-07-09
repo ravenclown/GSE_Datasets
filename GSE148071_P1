@@ -1,0 +1,3 @@
+gse148071_p1.data<-read.table(file = "/home/mert/Desktop/GSE148071/GSM4453576_P1_exp.txt.gz",header = T,row.names = 1)
+gse148071_1 <- Seurat::CreateSeuratObject(counts = gse148071_p1.data,project = "gse148071_1",min.cells=3,min.features=200)
+saveRDS(gse148071_1,file = "/home/mert/Desktop/gse148071_1.rds")
