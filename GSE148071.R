@@ -10,7 +10,7 @@ for (i in 1:42)
   names[i]<- paste0("gse148071_p",i)
 }
 
-for(i in 1:2)
+for(i in 1:42)
 {
   name = paste0("gse148071_p",i,"_data")
   obj = paste0("gse148071_p",i)
